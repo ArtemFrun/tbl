@@ -10,20 +10,20 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-public class TipyContracrot {
+public class TypeContractor {
     private String id;
     private String name;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    public TipyContracrot() {
+    public TypeContractor() {
     }
 
-    public TipyContracrot(String name) {
+    public TypeContractor(String name) {
         this.name = name;
     }
 
-    public TipyContracrot(String id, String name, LocalDateTime createdAt, LocalDateTime updatedAt) {
+    public TypeContractor(String id, String name, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.id = id;
         this.name = name;
         this.createdAt = createdAt;

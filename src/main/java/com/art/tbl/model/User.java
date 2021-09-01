@@ -16,25 +16,28 @@ public class User {
     private String surname;
     private String email;
     private String password;
+    private String description;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
     public User() {
     }
 
-    public User(String name, String surname, String email, String password) {
+    public User(String name, String surname, String email, String password, String description) {
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.password = password;
+        this.description = description;
     }
 
-    public User(String id, String name, String surname, String email, String password, LocalDateTime createdAt, LocalDateTime updatedAt) {
+    public User(String id, String name, String surname, String email, String password, String description, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.password = password;
+        this.description = description;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
     }

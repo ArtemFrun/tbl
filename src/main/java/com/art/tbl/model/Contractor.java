@@ -8,6 +8,7 @@ package com.art.tbl.model;
 
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
@@ -17,16 +18,16 @@ public class Contractor {
     private String id;
     private String name;
     private String phone;
-    private Date birthday;
+    private LocalDate birthday;
     private String description;
     private List<Category> category;
     private Location location;
-    private TipyContracrot tipyContracrot;
+    private TypeContractor typeContractor;
     private List<ProvidedService> providedServices;
     private List<SocialNetwork> socialNetworks;
     private List<Image> images;
     private List<Reviews> reviews;
-    private Date createdDate;
+    private LocalDate createdDate;
     private User user;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
@@ -34,17 +35,17 @@ public class Contractor {
     public Contractor() {
     }
 
-    public Contractor(String name, String phone, Date birthday, String description, List<Category> category,
-                      Location location, TipyContracrot tipyContracrot, List<ProvidedService> providedServices,
+    public Contractor(String name, String phone, LocalDate birthday, String description, List<Category> category,
+                      Location location, TypeContractor typeContractor, List<ProvidedService> providedServices,
                       List<SocialNetwork> socialNetworks, List<Image> images, List<Reviews> reviews,
-                      Date createdDate, User user) {
+                      LocalDate createdDate, User user) {
         this.name = name;
         this.phone = phone;
         this.birthday = birthday;
         this.description = description;
         this.category = category;
         this.location = location;
-        this.tipyContracrot = tipyContracrot;
+        this.typeContractor = typeContractor;
         this.providedServices = providedServices;
         this.socialNetworks = socialNetworks;
         this.images = images;
@@ -53,10 +54,10 @@ public class Contractor {
         this.user = user;
     }
 
-    public Contractor(String id, String name, String phone, Date birthday, String description,
-                      List<Category> category, Location location, TipyContracrot tipyContracrot,
+    public Contractor(String id, String name, String phone, LocalDate birthday, String description,
+                      List<Category> category, Location location, TypeContractor typeContractor,
                       List<ProvidedService> providedServices, List<SocialNetwork> socialNetworks,
-                      List<Image> images, List<Reviews> reviews, Date createdDate, User user,
+                      List<Image> images, List<Reviews> reviews, LocalDate createdDate, User user,
                       LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.id = id;
         this.name = name;
@@ -65,7 +66,7 @@ public class Contractor {
         this.description = description;
         this.category = category;
         this.location = location;
-        this.tipyContracrot = tipyContracrot;
+        this.typeContractor = typeContractor;
         this.providedServices = providedServices;
         this.socialNetworks = socialNetworks;
         this.images = images;
